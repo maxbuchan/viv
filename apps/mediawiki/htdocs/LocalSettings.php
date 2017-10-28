@@ -34,7 +34,7 @@ require_once "$IP/skins/Vector/Vector.php";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo             = "https://specials-images.forbesimg.com/imageserve/55b8e86ee4b05c2c3432412c/300x300.jpg?fit=scale&background=000000";
+$wgLogo             = "https://78.media.tumblr.com/avatar_5af5054f0107_128.png";
 
 ## UPO means: this is also a user preference option
 
