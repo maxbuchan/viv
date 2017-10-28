@@ -150,3 +150,6 @@ $wgResourceLoaderMaxQueryLength = -1;
 $wgArticlePath = "/$1";
 $wgUsePathInfo = true;
 $wgPhpCli = "/opt/bitnami/php/bin/php";
+
+require_once "$IP/extensions/Scribunto/Scribunto.php";
+$wgScribuntoDefaultEngine = 'luastandalone';
