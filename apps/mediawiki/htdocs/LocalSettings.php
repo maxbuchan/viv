@@ -34,15 +34,15 @@ require_once "$IP/skins/Vector/Vector.php";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo             = "http://brand.berkeley.edu/wp-content/uploads/2016/12/ucberkeleyseal.jpg";
+$wgLogo             = "https://specials-images.forbesimg.com/imageserve/55b8e86ee4b05c2c3432412c/300x300.jpg?fit=scale&background=000000";
 
 ## UPO means: this is also a user preference option
 
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
-$wgEmergencyContact = "user@example.com";
-$wgPasswordSender   = "user@example.com";
+$wgEmergencyContact = "buchan.maxwell@gmail.com";
+$wgPasswordSender   = "buchan.maxwell@gmail.com";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
