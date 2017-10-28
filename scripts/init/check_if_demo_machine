@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# Checks if the current machine was started as a demo.
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+run_once_globally_check "check_if_demo_machine"
+
+if is_demo_machine >/dev/null 2>/dev/null ; then
+  set_meta_data demo_machine 1
+  exit 0
+else
+  exit 1
+fi

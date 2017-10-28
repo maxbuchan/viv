@@ -1,0 +1,11 @@
+#!/bin/sh
+# 
+# Re-enable network connectivity over HTTP/HTTPS
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+# re-enable networking
+iptables -D INPUT \! -d 127.0.0.1/32 -p tcp --destination-port 80 -j DROP
+iptables -D INPUT \! -d 127.0.0.1/32 -p tcp --destination-port 443 -j DROP

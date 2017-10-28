@@ -1,0 +1,10 @@
+#!/bin/sh
+# 
+# Assure that hostname can be resolved
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+sed -i '/# bitnami-hosts-patch/d' /etc/hosts
+echo "127.0.0.1 `hostname` # bitnami-hosts-patch" >> /etc/hosts

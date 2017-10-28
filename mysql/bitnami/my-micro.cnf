@@ -1,0 +1,20 @@
+# 
+# Bitnami MySQL Configuration
+# Copyright 2017 Bitnami.com All Rights Reserved
+# 
+# Note: This file will be modified on server size changes
+#
+
+[mysqld]
+#wait_timeout = 120
+long_query_time = 1
+query_cache_limit=2M
+query_cache_type=1
+query_cache_size=8M
+innodb_buffer_pool_size=16M
+#innodb_log_file_size=128M
+#tmp_table_size=64M
+#max_connections = 2500
+#max_user_connections = 2500
+#innodb_flush_method=O_DIRECT
+#key_buffer_size=64M

@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Set boot.log permissions so only root can access application password
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+if [ -f /var/log/boot.log ] ; then
+  chmod 0600 /var/log/boot.log
+fi

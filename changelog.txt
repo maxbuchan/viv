@@ -1,0 +1,489 @@
+============ CHANGELOG =============
+
+Version 1.29.1-1      2017-10-24
+* Updated Apache to 2.4.28
+* Updated MySQL to 5.7.19
+* Updated OpenSSL to 1.0.2l
+* Updated PHP to 7.0.24
+* Updated phpMyAdmin to 4.7.4
+
+Version 1.29.1-0      2017-08-24
+* Updated MediaWiki to 1.29.1
+* Updated PHP to 7.0.22
+
+Version 1.29.0-0      2017-08-16
+* Updated phpMyAdmin to 4.7.2
+* Updated Apache to 2.4.27
+* Updated PHP to 5.6.31
+* Fix sudo vulnerability (CVE-2017-1000367)
+* Updated MediaWiki to 1.29.0
+* Updated MySQL to 5.6.37
+
+Version 1.28.2-1      2017-06-01
+* Updated OpenSSL to 1.0.2l
+* Updated MySQL to 5.6.36
+
+Version 1.28.2-0      2017-05-04
+* Updated Mediawiki to 1.28.2
+
+Version 1.28.1-0      2017-04-10
+* Updated Mediawiki to 1.28.1
+* Updated phpMyAdmin to 4.7.0
+* Updated OpenSSL to 1.0.2k (Security fixes for CVE-2017-3731, CVE-2017-3731, CVE-2017-3731, and CVE-2016-7055)
+* Updated PHP to 5.6.30
+* Updated Apache to 2.4.25
+* Updated MySQL to 5.6.35
+
+Version 1.28.0-0      2016-12-05
+* Updated Mediawiki to 1.28.0
+* Updated phpMyAdmin to 4.6.5.1
+* Updated PHP to 5.6.28
+* Updated MySQL to 5.6.34
+
+Version 1.27.1-1      2016-09-29
+* Updated OpenSSL to 1.0.2j (Security fix CVE-2016-6304)
+* Updated MySQL to 5.6.33
+* Updated PHP to 5.6.26
+* Updated phpMyAdmin to 4.6.4
+
+Version 1.27.1-0      2016-08-23
+* Updated Mediawiki to 1.27.1
+
+Version 1.27.0-0      2016-08-22
+* Updated Mediawiki to 1.27.0
+* Updated PHP to 5.6.25
+* Patched Off-Path TCP Linux Kernel Vulnerability in Cloud Images and Virtual Machines (Security release CVE-2016-5696)
+* Updated MySQL to 5.6.32
+
+Version 1.26.3-1      2016-07-22
+* Updated PHP to 5.6.24 (Security release: HTTP_PROXY is improperly trusted by some PHP libraries and applications)
+* Blocked Proxy request header in the web server (Security issue CVE-2016-5385, CVE-2016-5387, CVE-2016-1000110)
+* Updated Apache to 2.4.23
+* Updated phpMyAdmin to 4.6.3
+* Updated MySQL to 5.6.31
+
+Version 1.26.3-0      2016-05-23
+* Updated Mediawiki to 1.26.3
+* Updated phpMyAdmin to 4.6.1
+
+Version 1.26.2-3      2016-05-06
+* Updated policy of ImageMagick (disabled TEXT, SHOW, WIN, PLT) (Security CVE-2016-3714)
+* Updated PHP to 5.6.21 (Security release CVE-2016-3074)
+* Updated OpenSSL to 1.0.2h (Security release CVE-2016-2108 CVE-2016-2107)
+
+Version 1.26.2-2      2016-05-04
+* Modified policy of ImageMagick (Security CVE-2016-3714)
+* Updated PageSpeed to 1.9.32.14
+* Updated PHP to 5.6.20
+* Updated MySQL to 5.6.30
+* Updated Apache to 2.4.20
+* Updated phpMyAdmin to 4.6.0
+* Updated phpMyAdmin to 4.5.5.1
+* Updated PHP to 5.6.19
+* Updated OpenSSL to 1.0.2g (Security release CVE-2016-0800)
+
+Version 1.26.2-1      2016-02-10
+* Fixed module installation on PHP 7 stacks
+* Updated MySQL to 5.6.29
+* Updated PHP to 5.6.18
+* Updated phpMyAdmin to 4.5.4.1
+* Fixed thumbnails on Windows
+* Updated OpenSSL to 1.0.2e
+* Updated libpng to 1.5.26 (Security release CVE-2015-8540)
+
+Version 1.26.2-0      2015-12-24
+* Updated Mediawiki to 1.26.2
+
+Version 1.26.1-0      2015-12-21
+* Updated Mediawiki to 1.26.1
+* Updated Apache to 2.4.18
+* Updated MySQL to 5.6.28
+* Updated OpenSSL to 1.0.1q
+
+Version 1.26.0-0      2015-11-30
+* Updated Mediawiki to 1.26.0
+* Updated phpMyAdmin to 4.5.2
+
+Version 1.25.3-1      2015-11-17
+* Updated libpng to 1.5.24 (security issue)
+* Updated MySQL to 5.6.27
+
+Version 1.25.3-0      2015-10-21
+* Updated Mediawiki to 1.25.3
+* Updated Apache to 2.4.17
+
+Version 1.25.2-1      2015-09-21
+* Updated PHP to 5.5.29
+* Updated phpMyAdmin to 4.4.13.1
+
+Version 1.25.2-0      2015-08-12
+* Updated Mediawiki to 1.25.2
+* Updated Apache to 2.4.16
+* Updated PHP to 5.5.28
+* Updated OpenSSL to 1.0.1p
+* Updated PHP to 5.5.26
+* Updated MySQL to 5.6.25
+
+Version 1.25.1-0      2015-05-26
+* Updated Mediawiki to 1.25.1
+* Updated PHP to 5.5.25
+* Updated phpMyAdmin to 4.4.7
+* Dropping RC4 from Apache SSLCipherSuite directive
+
+Version 1.24.2-1      2015-04-23
+* Fix thumbnails issue on Windows
+* Updated phpMyAdmin to 4.4.3
+* Updated PHP to 5.4.40
+
+Version 1.24.2-0      2015-04-01
+* Updated Mediawiki to 1.24.2
+* Updated OpenSSL to 1.0.1m
+* Updated PHP to 5.4.39
+* Updated Apache to 2.4.12
+* Updated MySQL to 5.5.42 for Linux and Windows
+* Updated PageSpeed to 1.9.32.3
+* Updated phpMyAdmin to 4.3.7
+
+Version 1.24.1-0      2014-12-18
+* Updated Mediawiki to 1.24.1
+
+Version 1.24.0-0      2014-12-04
+* Updated Mediawiki to 1.24.0
+* Updated PHP to 5.4.35
+* Updated phpMyAdmin to 4.2.12
+
+Version 1.23.6-0      2014-10-30
+* Updated Mediawiki to 1.23.6
+
+Version 1.23.5-0      2014-10-21
+* (Version only available for OS X)
+* Fix MySQL startup issue for OS X Yosemite
+* Added GhostScript 9.05
+* Updated PHP to 5.4.34
+* Updated OpenSSL to 1.0.1j
+* Added OCI8 module. It requires InstantClient 11.2.
+* Updated phpMyAdmin to 4.2.9.1
+* Updated MySQL to 5.5.40
+
+Version 1.23.5-0      2014-10-02
+* Updated MediaWiki to 1.23.5
+
+Version 1.23.4-0      2014-09-29
+* Updated MediaWiki to 1.23.4
+* Fixed issue with ImageMagick on Windows
+* Updated phpMyAdmin to 4.2.8
+
+Version 1.23.3-0      2014-08-28
+* Updated MediaWiki to 1.23.3
+
+Version 1.23.2-1      2014-08-27
+* Moved application to root URL in Cloud Images and Virtual Machines
+* Updated MySQL to 5.5.39
+* Updated PHP to 5.4.32
+* Updated OpenSSL to 1.0.1i
+* Updated phpMyAdmin to 4.2.7.1
+
+Version 1.23.2-0      2014-08-09
+* Updated MediaWiki to 1.23.2
+* Updated Apache to 2.4.10
+* Updated PHP to 5.4.31
+* Updated MySQL to 5.5.38
+* Updated XDebug to 2.2.5
+* Updated XCache to 3.1.0
+* Updated mongo-php-driver to 1.5.4
+* Updated php-couchbase to 1.1.5
+* Updated Libxslt to 1.1.28
+* Updated Libxml2 to 2.9.1
+* Updated PHP to 5.4.30
+* Updated phpMyAdmin to 4.2.5
+* Updated OpenSSL to 1.0.1h
+* Fixed installation module issue
+
+Version 1.23.0-0      2014-06-05
+* Updated PHP to 5.4.29
+
+Version 1.22.7-0      2014-06-02
+* Updated MediaWiki to 1.22.7
+* Updated phpMyAdmin to 4.2.2
+* Added libv8 and v8js PHP extension for Linux and OS X
+
+Version 1.22.6-0      2014-04-25
+* Updated MediaWiki to 1.22.6
+
+Version 1.22.5-1      2014-04-08
+* Updated OpenSSL to 1.0.1g
+
+Version 1.22.5-0      2014-03-28
+* Updated MediaWiki to 1.22.5
+* Updated phpMyAdmin to 4.1.12
+* Improved Apache configuration for PHP-FPM mode
+* Updated Apache to 2.4.9
+
+Version 1.22.4-0      2014-03-13
+* Updated PHP to 5.4.26
+* Updated phpMyAdmin to 4.1.9
+
+Version 1.22.3-0      2014-03-03
+* Updated MediaWiki to 1.22.3
+* Updated MySQL to 5.5.36
+
+Version 1.22.2-1      2014-02-27
+* Modified URLs to use short URLs
+
+Version 1.22.2-0      2014-01-29
+* Updated MediaWiki to 1.22.2
+
+Version 1.22.1-0      2014-01-14
+* Updated MediaWiki to 1.22.1
+* Updated phpMyAdmin to 4.1.4
+* Updated PHP to 5.4.24
+* Updated OpenSSL to 1.0.1f in Linux and OSX
+* Updated phpMyAdmin to 4.1.0
+* Updated PHP to 5.4.23
+
+Version 1.22.0-0      2013-12-09
+* Updated Mediawiki 1.22.0
+
+Version 1.21.3-0      2013-11-18
+* Updated Mediawiki 1.21.3
+* Updated PHP to 5.4.22
+* Updated phpMyAdmin to 4.0.9
+
+Version 1.21.2-1      2013-10-08
+* Added PHP-FPM support for cloud images and VMs
+* Updated PHP to 5.4.20
+
+Version 1.21.2-0      2013-09-04
+* Updated Mediawiki 1.21.2
+
+Version 1.21.1-1      2013-08-26
+* Updated PHP to 5.4.19
+* Updated Apache to 2.4.6
+* Added logrotate configuration files
+* Added imagick PHP extension for Linux and OS X
+* Added apr-dbd MySQL driver
+* Added mod_pagespeed 1.6.29.2 for Linux
+* Updated MySQL to 5.5.32
+* Updated phpMyAdmin to 4.0.3
+* Added support for several languages
+
+Version 1.21.1-0      2013-05-31
+* Updated Mediawiki 1.21.1
+
+Version 1.21.0-0      2013-05-27
+* Updated Mediawiki 1.21.0
+
+Version 1.20.6-0      2013-05-22
+* Updated MediaWiki 1.20.6
+* Updated phpMyAdmin to 4.0.1
+* Updated PHP to 5.4.15
+
+Version 1.20.5-0      2013-05-02
+* Updated MediaWiki 1.20.5
+
+Version 1.20.4-0      2013-04-16
+* Updated MediaWiki 1.20.4
+* Updated PHP to 5.4.14
+* Updated MySQL to 5.5.30
+* Updated phpMyAdmin to 3.5.8
+* Updated Apache to 2.4.4
+* Updated OpenSSL to 1.0.1e
+
+Version 1.20.3-0      2013-03-05
+* Updated MediaWiki 1.20.3
+* Updated PHP to 5.4.12
+* Updated phpMyAdmin to 3.5.7
+* Updated MySQL to 5.5.29
+
+Version 1.20.2-0      2012-12-05
+* Updated MediaWiki 1.20.2
+
+Version 1.20.1-0      2012-12-03
+* Updated MediaWiki 1.20.1
+* Updated PHP to 5.4.9
+* Increased the max allowed size for upload files to 32M
+
+Version 1.20.0-1      2012-11-09
+* Updated Apache configuration
+
+Version 1.20.0-0      2012-11-07
+* Updated MediaWiki 1.20.0
+* Updated PHP to 5.4.8
+* Updated Apache to 2.4.3
+* Updated Memcache to 2.2.7
+* Updated XCache to 3.0.0
+
+Version 1.19.2-0      2012-09-04
+* Updated MediaWiki 1.19.2
+* Updated phpMyAdmin to 3.5.2.2
+* Updated curl to 7.27.0
+* Added ModSecurity Apache module 2.6.7
+* Updated AWS SDK to 1.5.13
+* Update PHP to 5.3.16
+* Added Mail, Net_Socket and Net_SMTP pear packages
+
+Version 1.19.1-0      2012-06-15
+* Update MediaWiki to 1.19.1
+* Enabled APC by default (Linux and Mac OS X)
+
+Version 1.19.0-0      2012-05-07
+* Update MediaWiki to 1.19.0
+* Update PHP to 5.3.11
+
+Version 1.18.3-0      2012-05-02
+* Update MediaWiki to 1.18.3
+
+Version 1.18.2-0      2012-04-27
+* Update Mediawiki to 1.18.2
+* Update Apache to 2.2.22
+
+Version 1.18.1-0      2012-01-12
+* Update Mediawiki to 1.18.1
+* Update phpMyAdmin to 3.4.9
+* Update AWS SDK for PHP to 1.4.8
+
+Version 1.18.0-0      2011-12-01
+* Update Mediawiki to 1.18.0
+* Update Apache to 2.2.21
+* Update MySQL to 5.5.16
+* Update phpMyAdmin to 3.4.7.1
+* Update AWS SDK for PHP to 1.4.7
+* Disable MySQL binary logging
+
+Version 1.17.0-0      2011-07-21
+* Disable MySQL binary logging
+* Update Mediawiki to 1.17.0
+* Update PHP to 5.3.6
+* Update phpMyAdmin to 3.4.2
+* Add graphical tool for managing servers
+* Add Linux 64 bits support
+* Don't allow to execute the ctlscript.sh script
+as root when the stack is installed as a non root user
+* Add TIFF support on Linux
+
+Version 1.16.5-0      2011-05-10
+* Update Mediawiki to 1.16.5
+* Update PHP to 5.3.5
+
+Version 1.16.4-0      2011-04-28
+* Update Mediawiki to 1.16.4
+* Update phpMyAdmin to 3.3.10
+* Update PHP to 5.2.17
+* Update phpMyAdmin to 2.11.11.3
+* Update AWS SDK to 1.2.6
+* Update MySQL 5.1.56
+* Include libmcrypt 1.2.8
+
+Version 1.16.2-0      2011-02-24
+* Update Mediawiki to 1.16.2
+
+Version 1.16.1-0      2011-01-12
+* Update Mediawiki to 1.16.1
+* Update Apache to 2.2.17
+* Update PHP to 5.2.15
+
+Version 1.16.0-0      2010-08-03
+* Update Mediawiki to 1.16.0
+
+Version 1.15.4-0      2010-06-21
+* Set version information for openSSL on Linux
+* Update Mediawiki to 1.15.4-0
+
+Version 1.15.3-0      2010-04-28
+* Update PHP to 5.2.13
+* Update Apache to 2.2.14
+* Updated Mediawiki to 1.15.3
+
+Version: 1.15.1-0       2009-07-21
+* Updated Mediawiki to 1.15.1 version
+
+Version: 1.15.0-1       2009-07-09
+* Updated PHP to 5.2.10
+
+Version: 1.15.0         2009-06-29
+* Updated MediaWiki to version 1.15.0
+
+Version: 1.14.0-1   2009-03-09
+- Fix issue checking permissions for root.
+
+Version: 1.14.0-0 	2009-02-23
+* Updated Mediawiki to version 1.14.0
+
+Version: 1.13.4-0 	2009-02-10
+* Updated Mediawiki to version 1.13.4
+
+Version: 1.13.3-0 	2008-12-17
+* Updated Mediawiki to version 1.13.3
+
+Version: 1.13.2-0 	2008-11-19
+* Updated Mediawiki to version 1.13.2
+
+Version: 1.13.0-1 	2008-09-17
+* Added environment console
+
+Version: 1.13.0-0 	2008-08-12
+* Updated MediaWiki to 1.13.0
+
+Version: 1.12.0-3       2008-08-12
+* Fixed installation on Linux 64 bits systems
+
+Version: 1.12.0-2 	2008-05-29
+* Fixed openssl module
+
+Version: 1.12.0-1 	2008-05-29
+* Updated Apache to 2.2.8
+* Updated Php to 5.2.6
+* Updated MySQL to 5.0.51
+
+Version: 1.12.0-0	2008-03-05
+* Upgraded MediaWiki to 1.12.0
+* Fixed installation bug related to SELinux
+
+Version: 1.11.0-9	2008-02-14
+* Fixed installation as root on Unix systems
+* Solaris support
+
+Version: 1.11.0-8	2008-02-05
+* Fixed: database name was wrongly substituted
+* Config folder isn't deleted anymore, but moved
+out of htdocs
+
+Version: 1.11.0-7	2008-01-10
+* Enabled debugging options
+
+Version: 1.11.0-6	2008-01-02
+* Added native installers for PPC and x86
+architectures on OSX
+* Fixed MySQL timing bug
+
+Version: 1.11.0-5	2007-12-26
+* Fixed MySQL timing bug
+
+Version: 1.11.0-4	2007-11-16
+* Added support for Mac OSX PowerPC
+* Updated PHP to version 5.2.5
+
+Version: 1.11.0-3	2007-11-02
+* Updated phpMyAdmin to version 2.11.2
+
+Version: 1.11.0-2	2007-10-26
+* Added phpMyAdmin 2.11.0
+* This version includes support for OSX x86
+
+Version: 1.11.0-1	2007-10-19
+* This version includes PEAR
+* Added wrappers to point MySQL to use bundled my.cnf
+
+Version: 1.11.0		2007-10-05
+* Updated control scripts
+* Updated version number to follow Mediawiki version
+
+Version: 0.9.1		2007-09-21
+* This version includes support for Linux x86
+* Upgraded MySQL to 5.0.45
+* Upgraded PHP to 5.2.4
+* Upgraded Apache to 2.0.61
+
+Version: 0.9		2007-09-14
+* Initial release, bundles Apache 2.0.59, PHP 5.2.3, MySQL 5.0.37 and
+MediaWiki 1.11.0

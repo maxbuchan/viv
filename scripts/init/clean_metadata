@@ -1,0 +1,16 @@
+#!/bin/sh
+# 
+# Bitnami Clean metadata files after initialization completes
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+run_once_globally_check "clean_metadata"
+if [ $? -ne 0 ]; then
+    exit 0
+fi
+
+# remove metadata password
+set_stored_data metadata_applications_password ""
+set_stored_data metadata_system_password ""

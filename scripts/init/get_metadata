@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Allow querying metadata externally
+#
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+if [ "x$1" = "xdemo-machine" ] ; then
+  if is_demo_machine ; then
+    echo true
+  else
+    echo false
+  fi
+  exit 0
+else
+  get_metadata_now "$1"
+  exit $?
+fi

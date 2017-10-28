@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Start Gonit daemon
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+if [ -x /usr/bin/gonit ]; then
+  /usr/bin/gonit
+fi

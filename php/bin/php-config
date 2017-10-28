@@ -1,0 +1,90 @@
+#! /bin/sh
+
+SED="/bin/sed"
+prefix="/opt/bitnami/php"
+datarootdir="/opt/bitnami/php/php"
+exec_prefix="${prefix}"
+version="7.0.24"
+vernum="70024"
+include_dir="${prefix}/include/php"
+includes="-I$include_dir -I$include_dir/main -I$include_dir/TSRM -I$include_dir/Zend -I$include_dir/ext -I$include_dir/ext/date/lib"
+ldflags=" -L/opt/bitnami/common/lib -L/bitnami/lampstack-linux-x64/output/sqlite/lib -L/bitnami/lampstack-linux-x64/src/imap-2007f/c-client"
+libs="-lcrypt  -lc-client  -lcrypto -lssl -lcrypto -lz -lexslt -ltidy -lresolv -lcrypt -lreadline -lncurses -lrt -lsqlite3 -lmcrypt -lltdl -lldap -llber -lstdc++ -lcrypto -lssl -lcrypto -lcrypt -liconv -lgmp -lpng -lz -ljpeg -lcrypto -lssl -lcrypto -lcurl -lbz2 -lz -lsqlite3 -lcrypto -lssl -lcrypto -lrt -lm -ldl -lnsl  -lrt -lxml2 -lz -liconv -lm -ldl -lcurl -lxml2 -lz -liconv -lm -ldl -lfreetype -lz -lbz2 -ldl -lm -licui18n -licuuc -licudata -ldl -lm -licuio -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lcrypt -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxslt -lxml2 -lz -liconv -ldl -lm -lrt -lcrypt "
+extension_dir='/opt/bitnami/php/lib/php/extensions'
+man_dir=`eval echo ${datarootdir}/man`
+program_prefix=""
+program_suffix=""
+exe_extension=""
+php_cli_binary=NONE
+php_cgi_binary=NONE
+configure_options=" '--prefix=/opt/bitnami/php' '--enable-fpm' '--with-fpm-user=daemon' '--with-fpm-group=daemon' '--with-apxs2=/opt/bitnami/apache2/bin/apxs' '--with-expat-dir=/opt/bitnami/common' '--with-zlib-dir=/opt/bitnami/common' '--enable-mbstring=all' '--enable-soap' '--enable-bcmath' '--enable-ftp' '--with-xmlrpc' '--enable-fastcgi' '--enable-force-cgi-redirect' '--enable-cgi' '--with-imap=/bitnami/lampstack-linux-x64/src/imap-2007f' '--with-imap-ssl=/opt/bitnami/common' '--with-png-dir=/opt/bitnami/common' '--with-gd' '--with-zlib' '--with-curl=/opt/bitnami/common' '--with-jpeg-dir=/opt/bitnami/common' '--enable-exif' '--with-openssl=/opt/bitnami/common' '--with-ldap=/opt/bitnami/common' '--enable-calendar' '--enable-ctype' '--enable-pcntl' '--enable-session' '--with-regex=php' '--enable-spl' '--enable-zip' '--with-bz2=/opt/bitnami/common' '--enable-sockets' '--with-mcrypt=/opt/bitnami/common' '--with-icu-dir=/opt/bitnami/common' '--with-tidy=/opt/bitnami/common' '--with-mysql=mysqlnd' '--with-mysqli=mysqlnd' '--with-pdo-mysql=mysqlnd' '--with-pdo_sqlite=/bitnami/lampstack-linux-x64/output/sqlite' '--with-sqlite3=/bitnami/lampstack-linux-x64/output/sqlite' '--with-iconv=/opt/bitnami/common' '--with-libxml-dir=/opt/bitnami/common' '--with-xsl=/opt/bitnami/common' '--with-dom=/opt/bitnami/common' '--with-freetype-dir=/opt/bitnami/common' '--with-gmp=/opt/bitnami/common' '--with-gettext' '--enable-intl' '--with-readline=/opt/bitnami/common' '--disable-huge-code-pages'"
+php_sapis=" apache2handler cli fpm phpdbg cgi"
+
+# Set php_cli_binary and php_cgi_binary if available
+for sapi in $php_sapis; do
+  case $sapi in
+  cli)
+    php_cli_binary="${exec_prefix}/bin/${program_prefix}php${program_suffix}${exe_extension}"
+    ;;
+  cgi)
+    php_cgi_binary="${exec_prefix}/bin/${program_prefix}php-cgi${program_suffix}${exe_extension}"
+    ;;
+  esac
+done
+
+# Determine which (if any) php binary is available
+if test "$php_cli_binary" != "NONE"; then
+  php_binary="$php_cli_binary"
+else
+  php_binary="$php_cgi_binary"
+fi
+
+# Remove quotes
+configure_options=`echo $configure_options | $SED -e "s#'##g"`
+
+case "$1" in
+--prefix)
+  echo $prefix;;
+--includes)
+  echo $includes;;
+--ldflags)
+  echo $ldflags;;
+--libs)
+  echo $libs;;
+--extension-dir)
+  echo $extension_dir;;
+--include-dir)
+  echo $include_dir;;
+--php-binary)
+  echo $php_binary;;
+--php-sapis)
+  echo $php_sapis;;
+--configure-options)
+  echo $configure_options;;
+--man-dir)
+  echo $man_dir;;
+--version)
+  echo $version;;
+--vernum)
+  echo $vernum;;
+*)
+  cat << EOF
+Usage: $0 [OPTION]
+Options:
+  --prefix            [$prefix]
+  --includes          [$includes]
+  --ldflags           [$ldflags]
+  --libs              [$libs]
+  --extension-dir     [$extension_dir]
+  --include-dir       [$include_dir]
+  --man-dir           [$man_dir]
+  --php-binary        [$php_binary]
+  --php-sapis         [$php_sapis]
+  --configure-options [$configure_options]
+  --version           [$version]
+  --vernum            [$vernum]
+EOF
+  exit 1;;
+esac
+
+exit 0

@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# Configure Stack components based on the instance type
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+APACHE_CONF="/opt/bitnami/apache2/conf/bitnami"
+MYSQL_CONF="/opt/bitnami/mysql/bitnami"
+MARIADB_CONF="/opt/bitnami/mariadb/bitnami"
+PHPFPM_CONF="/opt/bitnami/php/etc/bitnami"
+JAVA_CONF="/opt/bitnami/java/bitnami"
+HADOOP_CONF="/opt/bitnami/hadoop/etc/bitnami"
+HADOOP_CONF_DEST="/opt/bitnami/hadoop/etc/hadoop"
+
+run_once_per_instance_type_check "stack_etc"
+if [ $? -eq 0 ]; then
+  MACHINE_SIZE=`get_generic_instance_type`
+
+  if [ -d ${APACHE_CONF} ]; then
+    ln -fTs ${APACHE_CONF}/httpd-${MACHINE_SIZE}.conf ${APACHE_CONF}/httpd.conf
+  fi
+  if [ -d ${MYSQL_CONF} ]; then
+    ln -fTs ${MYSQL_CONF}/my-${MACHINE_SIZE}.cnf ${MYSQL_CONF}/my.cnf
+  fi
+  if [ -d ${MARIADB_CONF} ]; then
+    ln -fTs ${MARIADB_CONF}/my-${MACHINE_SIZE}.cnf ${MARIADB_CONF}/my.cnf
+  fi
+  if [ -d ${PHPFPM_CONF} ]; then
+    ln -fTs ${PHPFPM_CONF}/common-${MACHINE_SIZE}.conf ${PHPFPM_CONF}/common.conf
+  fi
+  if [ -d ${JAVA_CONF} ]; then
+    ln -fTs ${JAVA_CONF}/setenv-${MACHINE_SIZE}.sh ${JAVA_CONF}/setenv.sh
+  fi
+  if [ -d ${HADOOP_CONF} ]; then
+    ln -fTs ${HADOOP_CONF}/yarn-site-${MACHINE_SIZE}.xml ${HADOOP_CONF}/yarn-site.xml
+    TEMP_FILE=$(mktemp)
+    sed -i  '/<!-- BITNAMI DEFAULT CONFIGURATION -->/,/<!-- END BITNAMI DEFAULT CONFIGURATION -->/d' ${HADOOP_CONF_DEST}/yarn-site.xml
+    sed -i  '/<?xml/d' ${HADOOP_CONF_DEST}/yarn-site.xml
+    sed -i  '/<configuration>/d' ${HADOOP_CONF_DEST}/yarn-site.xml
+    echo '<?xml version="1.0"?>' > ${TEMP_FILE}
+    echo '<configuration>' >> ${TEMP_FILE} 
+    cat ${HADOOP_CONF}/yarn-site.xml ${HADOOP_CONF_DEST}/yarn-site.xml >> ${TEMP_FILE}
+    cat ${TEMP_FILE} > ${HADOOP_CONF_DEST}/yarn-site.xml
+  fi
+fi

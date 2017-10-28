@@ -1,0 +1,11 @@
+#!/bin/sh
+# 
+# Temporerily prevent network connectivity over HTTP/HTTPS
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+# disable networking temporarily
+iptables -A INPUT \! -d 127.0.0.1/32 -p tcp --destination-port 80 -j DROP
+iptables -A INPUT \! -d 127.0.0.1/32 -p tcp --destination-port 443 -j DROP

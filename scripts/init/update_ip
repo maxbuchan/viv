@@ -1,0 +1,19 @@
+#!/bin/sh
+# 
+# Update the application DNS / Public IP configuration
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+if [ "x$1" != "x" ]; then
+  IP=$1
+else
+  IP=`get_server_domain`
+fi
+
+if [ $? -eq 0 ] && [ "x$IP" != "x" ] ; then
+  for BNCONFIG in `find /opt/bitnami /opt/bitnami/apps -maxdepth 2 -name bnconfig -executable` ; do
+    $BNCONFIG --machine_hostname $IP
+  done
+fi

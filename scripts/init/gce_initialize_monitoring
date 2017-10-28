@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Initialize GCE Monitoring
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+API_KEY=`gce_get_metadata_now project/attributes/stackdriver-agent-key`
+if [ "x$API_KEY" != "x" ] ; then
+  if ( test -d /opt/bitnami/jmxtrans/scripts/postinstall ) ; then
+    for f in `find /opt/bitnami/jmxtrans/scripts/postinstall -regex '.*postinstall\-.*\.sh' -type f -executable` ; do
+      $f $API_KEY
+    done
+  fi
+  if ( test -f /opt/bitnami/jmxtrans/scripts/ctl.sh ) ; then
+      /opt/bitnami/jmxtrans/scripts/ctl.sh start
+  fi
+
+  if ( test -d /opt/bitnami/config/collectd/postinstall ) ; then
+      for f in `find /opt/bitnami/config/collectd/postinstall -regex '.*postinstall\-.*\.sh' -type f -executable` ; do
+          $f $API_KEY
+      done
+  fi
+fi

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PATH="/opt/bitnami/sqlite/bin:/opt/bitnami/php/bin:/opt/bitnami/mysql/bin:/opt/bitnami/apache2/bin:/opt/bitnami/common/bin:$PATH"
+BITNAMI_ROOT="/opt/bitnami"
+export BITNAMI_ROOT
+
+
+exec /bin/bash --noprofile --norc

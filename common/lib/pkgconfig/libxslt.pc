@@ -1,0 +1,12 @@
+prefix=/opt/bitnami/common
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.29
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Libs: -L${libdir} -lxslt  -L/opt/bitnami/common/lib -lxml2 -L/opt/bitnami/common/lib -lz -liconv -lm -ldl -lm  -lrt
+Cflags: -I${includedir}

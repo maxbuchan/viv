@@ -1,0 +1,202 @@
+2017-10-28T02:24:25.743200Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2017-10-28T02:24:25.743293Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2017-10-28T02:24:25.743329Z 0 [Note] /opt/bitnami/mysql/bin/mysqld.bin (mysqld 5.7.19) starting as process 934 ...
+2017-10-28T02:24:25.920557Z 0 [Note] InnoDB: PUNCH HOLE support available
+2017-10-28T02:24:25.920604Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2017-10-28T02:24:25.920610Z 0 [Note] InnoDB: Uses event mutexes
+2017-10-28T02:24:25.920614Z 0 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2017-10-28T02:24:25.920617Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-10-28T02:24:25.920620Z 0 [Note] InnoDB: Using Linux native AIO
+2017-10-28T02:24:25.920853Z 0 [Note] InnoDB: Number of pools: 1
+2017-10-28T02:24:25.920935Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2017-10-28T02:24:25.923630Z 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2017-10-28T02:24:25.924712Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2017-10-28T02:24:25.925313Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2017-10-28T02:24:26.271958Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-10-28T02:24:26.843079Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2017-10-28T02:24:26.843156Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2017-10-28T02:24:27.192643Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2017-10-28T02:24:27.193552Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2017-10-28T02:24:27.193564Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2017-10-28T02:24:27.193784Z 0 [Note] InnoDB: Waiting for purge to start
+2017-10-28T02:24:27.244008Z 0 [Note] InnoDB: 5.7.19 started; log sequence number 3896487
+2017-10-28T02:24:27.244281Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2017-10-28T02:24:27.244621Z 0 [Note] InnoDB: Loading buffer pool(s) from /opt/bitnami/mysql/data/ib_buffer_pool
+2017-10-28T02:24:27.592623Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2017-10-28T02:24:27.592663Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2017-10-28T02:24:27.592685Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2017-10-28T02:24:27.592726Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2017-10-28T02:24:27.837255Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837303Z 0 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837311Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837316Z 0 [Warning] 'user' entry 'bn_mediawiki@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837944Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837958Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.837962Z 0 [Warning] 'db' entry 'bitnami_mediawiki bn_mediawiki@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.838367Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.952128Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:27.952153Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:28.111917Z 0 [Note] Event Scheduler: Loaded 0 events
+2017-10-28T02:24:28.112127Z 0 [Note] /opt/bitnami/mysql/bin/mysqld.bin: ready for connections.
+Version: '5.7.19'  socket: '/opt/bitnami/mysql/tmp/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2017-10-28T02:24:28.112143Z 0 [Note] Executing 'SELECT * FROM INFORMATION_SCHEMA.TABLES;' to get a list of tables using the deprecated partition engine. You may use the startup option '--disable-partition-engine-check' to skip this check. 
+2017-10-28T02:24:28.112146Z 0 [Note] Beginning of list of non-natively partitioned tables
+2017-10-28T02:24:28.271887Z 0 [Note] End of list of non-natively partitioned tables
+2017-10-28T02:24:28.305918Z 0 [Note] InnoDB: Buffer pool(s) load completed at 171028  2:24:28
+2017-10-28T02:24:46.307469Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2017-10-28T02:24:46.307504Z 0 [Note] Shutting down slave threads
+2017-10-28T02:24:46.324025Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2017-10-28T02:24:46.324070Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2017-10-28T02:24:46.356584Z 0 [Note] Binlog end
+2017-10-28T02:24:46.359239Z 0 [Note] Shutting down plugin 'ngram'
+2017-10-28T02:24:46.359269Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2017-10-28T02:24:46.359274Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2017-10-28T02:24:46.359278Z 0 [Note] Shutting down plugin 'partition'
+2017-10-28T02:24:46.359280Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2017-10-28T02:24:46.359283Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2017-10-28T02:24:46.359286Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2017-10-28T02:24:46.359288Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2017-10-28T02:24:46.359290Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2017-10-28T02:24:46.359292Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2017-10-28T02:24:46.359295Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2017-10-28T02:24:46.359297Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2017-10-28T02:24:46.359299Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2017-10-28T02:24:46.359301Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2017-10-28T02:24:46.359303Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2017-10-28T02:24:46.359305Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2017-10-28T02:24:46.359307Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2017-10-28T02:24:46.359309Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2017-10-28T02:24:46.359311Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2017-10-28T02:24:46.359313Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2017-10-28T02:24:46.359315Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2017-10-28T02:24:46.359318Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2017-10-28T02:24:46.359320Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2017-10-28T02:24:46.359322Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2017-10-28T02:24:46.359324Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2017-10-28T02:24:46.359326Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2017-10-28T02:24:46.359328Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2017-10-28T02:24:46.359331Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2017-10-28T02:24:46.359333Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2017-10-28T02:24:46.359335Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2017-10-28T02:24:46.359337Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2017-10-28T02:24:46.359339Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2017-10-28T02:24:46.359341Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2017-10-28T02:24:46.359343Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2017-10-28T02:24:46.359345Z 0 [Note] Shutting down plugin 'InnoDB'
+2017-10-28T02:24:46.359637Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2017-10-28T02:24:46.359731Z 0 [Note] InnoDB: Starting shutdown...
+2017-10-28T02:24:46.460045Z 0 [Note] InnoDB: Dumping buffer pool(s) to /opt/bitnami/mysql/data/ib_buffer_pool
+2017-10-28T02:24:46.492095Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 171028  2:24:46
+2017-10-28T02:24:48.171661Z 0 [Note] InnoDB: Shutdown completed; log sequence number 3897209
+2017-10-28T02:24:48.171940Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2017-10-28T02:24:48.171949Z 0 [Note] Shutting down plugin 'MEMORY'
+2017-10-28T02:24:48.171956Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2017-10-28T02:24:48.171983Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2017-10-28T02:24:48.171988Z 0 [Note] Shutting down plugin 'MyISAM'
+2017-10-28T02:24:48.172001Z 0 [Note] Shutting down plugin 'CSV'
+2017-10-28T02:24:48.172007Z 0 [Note] Shutting down plugin 'sha256_password'
+2017-10-28T02:24:48.172009Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2017-10-28T02:24:48.172179Z 0 [Note] Shutting down plugin 'binlog'
+2017-10-28T02:24:48.172551Z 0 [Note] /opt/bitnami/mysql/bin/mysqld.bin: Shutdown complete
+
+2017-10-28T02:24:58.664646Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2017-10-28T02:24:58.664732Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2017-10-28T02:24:58.664756Z 0 [Note] /opt/bitnami/mysql/bin/mysqld.bin (mysqld 5.7.19) starting as process 2026 ...
+2017-10-28T02:24:58.669334Z 0 [Note] InnoDB: PUNCH HOLE support available
+2017-10-28T02:24:58.669362Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2017-10-28T02:24:58.669368Z 0 [Note] InnoDB: Uses event mutexes
+2017-10-28T02:24:58.669373Z 0 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2017-10-28T02:24:58.669378Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-10-28T02:24:58.669383Z 0 [Note] InnoDB: Using Linux native AIO
+2017-10-28T02:24:58.669592Z 0 [Note] InnoDB: Number of pools: 1
+2017-10-28T02:24:58.669682Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2017-10-28T02:24:58.671144Z 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2017-10-28T02:24:58.672157Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2017-10-28T02:24:58.672813Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2017-10-28T02:24:58.684715Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-10-28T02:24:58.695618Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2017-10-28T02:24:58.695695Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2017-10-28T02:24:59.022374Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2017-10-28T02:24:59.023297Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2017-10-28T02:24:59.023313Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2017-10-28T02:24:59.023551Z 0 [Note] InnoDB: Waiting for purge to start
+2017-10-28T02:24:59.073803Z 0 [Note] InnoDB: 5.7.19 started; log sequence number 3897237
+2017-10-28T02:24:59.074063Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2017-10-28T02:24:59.078602Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2017-10-28T02:24:59.078630Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2017-10-28T02:24:59.078651Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2017-10-28T02:24:59.078689Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2017-10-28T02:24:59.078813Z 0 [Note] InnoDB: Loading buffer pool(s) from /opt/bitnami/mysql/data/ib_buffer_pool
+2017-10-28T02:24:59.079999Z 0 [Note] InnoDB: Buffer pool(s) load completed at 171028  2:24:59
+2017-10-28T02:24:59.084060Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084093Z 0 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084100Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084118Z 0 [Warning] 'user' entry 'bn_mediawiki@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084143Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084148Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084151Z 0 [Warning] 'db' entry 'bitnami_mediawiki bn_mediawiki@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084159Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084844Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.084861Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2017-10-28T02:24:59.088658Z 0 [Note] Event Scheduler: Loaded 0 events
+2017-10-28T02:24:59.088812Z 0 [Note] /opt/bitnami/mysql/bin/mysqld.bin: ready for connections.
+Version: '5.7.19'  socket: '/opt/bitnami/mysql/tmp/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2017-10-28T02:24:59.088818Z 0 [Note] Executing 'SELECT * FROM INFORMATION_SCHEMA.TABLES;' to get a list of tables using the deprecated partition engine. You may use the startup option '--disable-partition-engine-check' to skip this check. 
+2017-10-28T02:24:59.088821Z 0 [Note] Beginning of list of non-natively partitioned tables
+2017-10-28T02:24:59.097827Z 0 [Note] End of list of non-natively partitioned tables
+2017-10-28T02:42:15.745842Z 49 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.797394Z 50 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.822357Z 51 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.822972Z 52 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.823353Z 53 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.823678Z 54 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.823927Z 55 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:42:15.824194Z 56 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.576957Z 57 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.578347Z 58 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.579120Z 59 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.579581Z 60 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.579925Z 61 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.580225Z 62 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.580466Z 63 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:45.580737Z 64 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.553901Z 65 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.555194Z 66 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.555880Z 67 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.556319Z 68 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.556678Z 69 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.557021Z 70 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.557267Z 71 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:46.557535Z 72 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.947496Z 73 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.948735Z 74 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.949465Z 75 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.949923Z 76 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.950284Z 77 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.950611Z 78 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.950848Z 79 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:43:49.951207Z 80 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.051014Z 81 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.052294Z 82 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.053065Z 83 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.053574Z 84 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.054064Z 85 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.054433Z 86 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.054729Z 87 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:08.055025Z 88 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.615856Z 89 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.617047Z 90 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.617782Z 91 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.618224Z 92 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.618582Z 93 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.618930Z 94 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.619172Z 95 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:54.619443Z 96 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.606421Z 97 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.607700Z 98 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.608425Z 99 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.608862Z 100 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.609211Z 101 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.609506Z 102 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.609742Z 103 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)
+2017-10-28T02:45:57.610002Z 104 [Note] Access denied for user 'wikiuser'@'localhost' (using password: NO)

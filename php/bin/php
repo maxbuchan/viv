@@ -1,0 +1,6 @@
+#!/bin/sh
+PHPRC=/opt/bitnami/php/etc
+export PHPRC
+
+. /opt/bitnami/php/../scripts/setenv.sh
+exec /opt/bitnami/php/bin/php.bin "$@"

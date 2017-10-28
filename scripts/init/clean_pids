@@ -1,0 +1,15 @@
+#!/bin/sh
+# 
+# Bitnami Clean PID files for a clean boot
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+run_once_per_boot_check "clean_pids"
+if [ $? -eq 0 ]; then
+  /opt/bitnami/ctlscript.sh cleanpid
+  for f in bnagent/var/agent.pid; do
+    rm -f /opt/bitnami/$f
+  done
+fi

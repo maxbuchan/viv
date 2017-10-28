@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# Regenerate keys for all applications that support it
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+# when run with --force option, set the password regardless of flag
+if [ "x$1" != "x--force" ] ; then
+    run_once_globally_check "regenerate_keys"
+    if [ $? -ne 0 ]; then
+        exit 0
+    fi
+fi
+
+# start database services
+for SERVICE in mysql mariadb postgresql mongodb ; do
+    /opt/bitnami/ctlscript.sh start $SERVICE </dev/null >/dev/null 2>&1
+done
+
+# regenerate keys for all services
+for BNCONFIG in `find /opt/bitnami/apps -maxdepth 2 -name bnconfig -executable` ; do
+    BNCONFIGDIR="`dirname "$BNCONFIG"`"
+    BNCONFIGDIRNAME="`basename "$BNCONFIGDIR"`"
+    echo "[`date`] Regenerating keys for $BNCONFIGDIRNAME"
+    "$BNCONFIG" --regenerateKeys 1
+    echo "[`date`] Regenerating keys for $BNCONFIGDIRNAME finished"
+done
+
+echo "[`date`] Finished regenerating keys"
