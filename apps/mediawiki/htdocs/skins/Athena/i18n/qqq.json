@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sophivorus",
+			"Umherirrender",
+			"Liuxinyu970226"
+		]
+	},
+	"athena-desc": "{{desc|name=Athena|url=https://www.mediawiki.org/wiki/Skin:Athena|what=skin}}",
+	"athena-search": "Placeholder for the search form\n{{Identical|Search}}",
+	"athena-personal": "Label for the user section of the sidebar\n{{Identical|Personal}}",
+	"athena-tools": "Label for the tools section of the sidebar\n{{Identical|Tool}}"
+}

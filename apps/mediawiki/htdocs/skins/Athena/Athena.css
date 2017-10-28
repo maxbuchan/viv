@@ -1,0 +1,240 @@
+/**
+ * General elements
+ */
+body {
+	font-family: Helvetica;
+	height: 100%;
+	margin: 0;
+	padding: 2em;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+fieldset {
+	border: 1px solid #ddd;
+	margin: 1em 0;
+}
+
+/**
+ * Specific elemnts
+ */
+#mw-js-message {
+	display: none;
+}
+
+/**
+ * Sidebar
+ */
+#sidebar {
+	font-size: small;
+	padding: 1em 2em;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#sidebar h5 {
+	font: inherit;
+	font-size: normal;
+	font-weight: bold;
+	margin: 1em 0 0 0;
+}
+#sidebar .portal {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Search form
+ */
+#search-form {
+	margin-bottom: 1em;
+}
+#search-form input {
+	border: none;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	font: inherit;
+	font-size: medium;
+	margin: 0;
+	outline: none;
+	padding: 5px 0;
+	width: 107px;
+}
+#search-form button {
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	cursor: pointer;
+	margin: 0;
+	outline: none;
+	padding: 5px;
+	vertical-align: bottom;
+}
+#search-form img {
+	display: block;
+	width: 20px;
+}
+
+/**
+ * Content
+ */
+#content {
+	line-height: 1.5;
+	overflow: hidden;
+	margin-left: 10em;
+	padding: 0 2em;
+}
+#content ol {
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+#content ul {
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+
+/**
+ * Title
+ */
+#title {
+
+}
+
+/**
+ * Actions
+ */
+#actions {
+	display: inline;
+	font-size: small;
+	font-weight: 300;
+	list-style: none;
+	margin-left: 1em !important;
+	padding: 0;
+}
+#actions li {
+	display: inline;
+	margin: 0 1em 0 0;
+	padding: 0;
+}
+#actions li.selected a {
+	color: #333;
+}
+#actions a {
+	color: blue;
+	text-decoration: none;
+}
+#actions a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * Table of contents
+ */
+#toc {
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 1em;
+}
+#toc ul {
+	margin: 0;
+}
+#toc li {
+	list-style: none;
+}
+#toc h2 {
+	display: inline;
+}
+#toc .toctoggle {
+	display: none; /* Hide it because it cannot be styled like the Edit section button */
+}
+
+/**
+ * Thumbs
+ */
+.thumb {
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+.thumb .thumbinner {
+	padding: 10px;
+}
+.thumb .tright {
+	margin: 0 0 10px 10px;
+}
+.thumb .tleft {
+	margin: 0 10px 10px 0;
+}
+.thumb .thumbcaption {
+	font-size: small;
+}
+
+/**
+ * Galleries
+ * 
+ * Galleries come with their own styling, these are overrides to make the galleries fit with the overall style of the Venus skin
+ */
+#content .gallerytext {
+	font-size: small;
+	margin: 5px;
+	padding: 0;
+}
+#content .gallerytext p {
+	margin: 0;
+}
+
+/**
+ * Edit section button
+ */
+.mw-editsection {
+	font-size: small;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+.mw-editsection-bracket {
+	display: none;
+}
+
+/**
+ * Collapse button
+ *
+ * This button is found on Special:RecentChanges and Special:Watchlist
+ */
+.mw-collapsible-toggle {
+	margin-left: 1em;
+}
+.mw-collapsible-bracket {
+	display: none;
+}
+
+/**
+ * Make Firefox buttons like Chrome
+ */
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Footer
+ */
+#footer-bottom {
+	border-top: 1px solid #ddd;
+	font-size: small;
+	margin-top: 10em;
+	padding: 1em;
+}
+.footer-icons {
+	float: right;
+}
+.footer-places {
+	padding: 0;
+}
+.footer-places li {
+	display: inline;
+	margin-right: 1em;
+}
