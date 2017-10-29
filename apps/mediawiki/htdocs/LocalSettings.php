@@ -156,3 +156,8 @@ $wgScribuntoDefaultEngine = 'luastandalone';
 
 wfLoadSkin( 'Athena' );
 
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['*']['createpage'] = false;
+$wgGroupPermissions['user']['edit'] = false;
+$wgGroupPermissions['user']['createpage'] = false;
+
