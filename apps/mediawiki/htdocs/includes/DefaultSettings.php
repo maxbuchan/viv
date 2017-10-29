@@ -5098,10 +5098,10 @@ $wgGroupPermissions = [];
 // Implicit group for all visitors
 $wgGroupPermissions['*']['createaccount'] = true;
 $wgGroupPermissions['*']['read'] = true;
-$wgGroupPermissions['*']['edit'] = true;
-$wgGroupPermissions['*']['createpage'] = true;
-$wgGroupPermissions['*']['createtalk'] = true;
-$wgGroupPermissions['*']['writeapi'] = true;
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['*']['createpage'] = false;
+$wgGroupPermissions['*']['createtalk'] = false;
+$wgGroupPermissions['*']['writeapi'] = false;
 $wgGroupPermissions['*']['editmyusercss'] = true;
 $wgGroupPermissions['*']['editmyuserjs'] = true;
 $wgGroupPermissions['*']['viewmywatchlist'] = true;
@@ -5112,25 +5112,25 @@ $wgGroupPermissions['*']['editmyoptions'] = true;
 # $wgGroupPermissions['*']['patrolmarks'] = false; // let anons see what was patrolled
 
 // Implicit group for all logged-in accounts
-$wgGroupPermissions['user']['move'] = true;
-$wgGroupPermissions['user']['move-subpages'] = true;
-$wgGroupPermissions['user']['move-rootuserpages'] = true; // can move root userpages
-$wgGroupPermissions['user']['move-categorypages'] = true;
-$wgGroupPermissions['user']['movefile'] = true;
+$wgGroupPermissions['user']['move'] = false;
+$wgGroupPermissions['user']['move-subpages'] = false;
+$wgGroupPermissions['user']['move-rootuserpages'] = false; // can move root userpages
+$wgGroupPermissions['user']['move-categorypages'] = false;
+$wgGroupPermissions['user']['movefile'] = false;
 $wgGroupPermissions['user']['read'] = true;
-$wgGroupPermissions['user']['edit'] = true;
-$wgGroupPermissions['user']['createpage'] = true;
-$wgGroupPermissions['user']['createtalk'] = true;
-$wgGroupPermissions['user']['writeapi'] = true;
-$wgGroupPermissions['user']['upload'] = true;
-$wgGroupPermissions['user']['reupload'] = true;
-$wgGroupPermissions['user']['reupload-shared'] = true;
-$wgGroupPermissions['user']['minoredit'] = true;
-$wgGroupPermissions['user']['purge'] = true;
-$wgGroupPermissions['user']['sendemail'] = true;
-$wgGroupPermissions['user']['applychangetags'] = true;
-$wgGroupPermissions['user']['changetags'] = true;
-$wgGroupPermissions['user']['editcontentmodel'] = true;
+$wgGroupPermissions['user']['edit'] = false;
+$wgGroupPermissions['user']['createpage'] = false;
+$wgGroupPermissions['user']['createtalk'] = false;
+$wgGroupPermissions['user']['writeapi'] = false;
+$wgGroupPermissions['user']['upload'] = false;
+$wgGroupPermissions['user']['reupload'] = false;
+$wgGroupPermissions['user']['reupload-shared'] = false;
+$wgGroupPermissions['user']['minoredit'] = false;
+$wgGroupPermissions['user']['purge'] = false;
+$wgGroupPermissions['user']['sendemail'] = false;
+$wgGroupPermissions['user']['applychangetags'] = false;
+$wgGroupPermissions['user']['changetags'] = false;
+$wgGroupPermissions['user']['editcontentmodel'] = false;
 
 // Implicit group for accounts that pass $wgAutoConfirmAge
 $wgGroupPermissions['autoconfirmed']['autoconfirmed'] = true;
@@ -5145,9 +5145,12 @@ $wgGroupPermissions['bot']['nominornewtalk'] = true;
 $wgGroupPermissions['bot']['autopatrol'] = true;
 $wgGroupPermissions['bot']['suppressredirect'] = true;
 $wgGroupPermissions['bot']['apihighlimits'] = true;
-$wgGroupPermissions['bot']['writeapi'] = true;
+$wgGroupPermissions['bot']['writeapi'] = false;
 
 // Most extra permission abilities go to this group
+$wgGroupPermissions['sysop']['edit'] = true;
+$wgGroupPermissions['sysop']['createpage'] = true;
+$wgGroupPermissions['sysop']['purge'] = true;
 $wgGroupPermissions['sysop']['block'] = true;
 $wgGroupPermissions['sysop']['createaccount'] = true;
 $wgGroupPermissions['sysop']['delete'] = true;
