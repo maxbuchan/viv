@@ -18,6 +18,7 @@ fieldset {
 	margin: 1em 0;
 }
 
+
 /**
  * Specific elemnts
  */
@@ -45,6 +46,11 @@ fieldset {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
+}
+
+#sidebar li {
+	padding-bottom: 8px;
 }
 
 /**
@@ -114,6 +120,7 @@ fieldset {
 	list-style: none;
 	margin-left: 1em !important;
 	float: right;
+	font-size: 15px;
 	padding: 0;
 }
 #actions li {
