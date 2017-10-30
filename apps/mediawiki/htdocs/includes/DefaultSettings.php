@@ -5148,6 +5148,21 @@ $wgGroupPermissions['bot']['apihighlimits'] = true;
 $wgGroupPermissions['bot']['writeapi'] = false;
 
 // Most extra permission abilities go to this group
+
+$wgGroupPermissions['sysop']['edit'] = true;
+$wgGroupPermissions['sysop']['createpage'] = true;
+$wgGroupPermissions['sysop']['createtalk'] = true;
+$wgGroupPermissions['sysop']['writeapi'] = true;
+$wgGroupPermissions['sysop']['upload'] = true;
+$wgGroupPermissions['sysop']['reupload'] = true;
+$wgGroupPermissions['sysop']['reupload-shared'] = true;
+$wgGroupPermissions['sysop']['minoredit'] = true;
+$wgGroupPermissions['sysop']['purge'] = true;
+$wgGroupPermissions['sysop']['sendemail'] = true;
+$wgGroupPermissions['sysop']['applychangetags'] = true;
+$wgGroupPermissions['sysop']['changetags'] = true;
+$wgGroupPermissions['sysop']['editcontentmodel'] = true;
+
 $wgGroupPermissions['sysop']['edit'] = true;
 $wgGroupPermissions['sysop']['createpage'] = true;
 $wgGroupPermissions['sysop']['purge'] = true;
