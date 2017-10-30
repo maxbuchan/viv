@@ -168,3 +168,5 @@ wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Math' );
 
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+
+wfLoadExtension( 'ParserFunctions' );
