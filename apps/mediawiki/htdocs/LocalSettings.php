@@ -157,3 +157,8 @@ $wgScribuntoDefaultEngine = 'luastandalone';
 wfLoadSkin( 'Athena' );
 
 wfLoadExtension( 'PDFEmbed' );
+// Default width for the PDF object container.
+$wgPdfEmbed['width'] = 800;
+
+// Default height for the PDF object container.
+$wgPdfEmbed['height'] = 1090;
