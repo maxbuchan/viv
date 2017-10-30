@@ -162,3 +162,5 @@ $wgPdfEmbed['width'] = 800;
 
 // Default height for the PDF object container.
 $wgPdfEmbed['height'] = 1090;
+
+wfLoadExtension( 'EmbedVideo' );
