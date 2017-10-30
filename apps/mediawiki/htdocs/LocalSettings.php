@@ -168,3 +168,11 @@ wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Math' );
 
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+require_once "$IP/extensions/Math/Math.php";
+$wgMathValidModes = array(MW_MATH_MATHJAX); // Define MathJax as the only valid math rendering mode
+$wgUseMathJax = true; // Enable MathJax
+$wgDefaultUserOptions['math'] = MW_MATH_MATHJAX; // Set MathJax as the default rendering option
+$wgDefaultUserOptions['mathJax'] = true; // Enable the MathJax checkbox option
+$wgHiddenPrefs[] = 'math'; // Hide math preference
+$wgHiddenPrefs[] = 'mathJax'; // Hide MathJax checkbox
+$wgMathDisableTexFilter = true; // or compile "texvccheck"
