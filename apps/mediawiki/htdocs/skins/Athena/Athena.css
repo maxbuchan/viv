@@ -9,6 +9,7 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #4285f4;
 }
 a:hover {
 	text-decoration: underline;
