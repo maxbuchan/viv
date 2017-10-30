@@ -10,6 +10,7 @@
 	max-height: 100vh;
 	/* But don't let it collapse into nothingness on really tiny screens */
 	min-height: 5em;
+	width: 100%;
 }
 
 /*
@@ -27,7 +28,7 @@
 
 #wpSummary {
 	display: block;
-	width: 80%;
+	width: 100%;
 	margin-bottom: 1em;
 }
 
