@@ -18,8 +18,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "berkeleytext";
-$wgMetaNamespace = "berkeleytext";
+$wgSitename      = "BerkeleyText";
+$wgMetaNamespace = "BerkeleyText";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -102,7 +102,7 @@ $wgShellLocale = "en_US.utf8";
 
 ## If you have the appropriate support software installed
 ## you can enable inline LaTeX equations:
-$wgUseTeX           = false;
+$wgUseTeX           = true;
 
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
@@ -168,11 +168,3 @@ wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Math' );
 
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
-require_once "$IP/extensions/Math/Math.php";
-$wgMathValidModes = array(MW_MATH_MATHJAX); // Define MathJax as the only valid math rendering mode
-$wgUseMathJax = true; // Enable MathJax
-$wgDefaultUserOptions['math'] = MW_MATH_MATHJAX; // Set MathJax as the default rendering option
-$wgDefaultUserOptions['mathJax'] = true; // Enable the MathJax checkbox option
-$wgHiddenPrefs[] = 'math'; // Hide math preference
-$wgHiddenPrefs[] = 'mathJax'; // Hide MathJax checkbox
-$wgMathDisableTexFilter = true; // or compile "texvccheck"
