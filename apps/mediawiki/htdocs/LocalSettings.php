@@ -156,3 +156,4 @@ $wgScribuntoDefaultEngine = 'luastandalone';
 
 wfLoadSkin( 'Athena' );
 
+wfLoadExtension( 'PDFEmbed' );
