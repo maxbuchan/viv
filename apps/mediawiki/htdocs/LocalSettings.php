@@ -164,3 +164,5 @@ $wgPdfEmbed['width'] = 800;
 $wgPdfEmbed['height'] = 1090;
 
 wfLoadExtension( 'EmbedVideo' );
+
+wfLoadExtension( 'Math' );
