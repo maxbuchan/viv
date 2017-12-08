@@ -9,4 +9,5 @@ To report bugs in berkeleytext.com please either email James or Max.
 
 ### Acknowledgements
 This project was created using the Bitnami MediaWiki Stack 1.29.1-1.
+
 This project was inspired to use technology to not only reduce waste but to provide equal opportunity to all students.
