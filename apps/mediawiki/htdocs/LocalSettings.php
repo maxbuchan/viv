@@ -179,7 +179,7 @@ wfLoadExtension( 'VisualEditor' );
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
 $wgHiddenPrefs[] = 'visualeditor-enable';
 $wgVirtualRestConfig['modules']['parsoid'] = array(
-'url' => 'http://berkeleytext.org',
+'url' => 'http://localhost:8142',
 'domain' => 'berkeleytext.org'
 );
 
