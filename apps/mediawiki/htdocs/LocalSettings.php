@@ -119,7 +119,7 @@ $wgUpgradeKey = "cbf56817e48b624f";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "athena";
+$wgDefaultSkin = "timeless";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
