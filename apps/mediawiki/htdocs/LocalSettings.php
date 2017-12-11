@@ -170,3 +170,5 @@ wfLoadExtension( 'Math' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 
 wfLoadExtension( 'ParserFunctions' );
+
+wfLoadExtension( 'AntiSpoof' );
