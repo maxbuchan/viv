@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"iframepage": "Iframe-side",
+	"iframepage-desc": "Gjør det mulig å bygge inn en iframe på en spesialside",
+	"iframepage-error-wgifsrc": "Variabelen <code>$wgIframePageSrc</code> må være satt i <code>LocalSettings.php</code>."
+}

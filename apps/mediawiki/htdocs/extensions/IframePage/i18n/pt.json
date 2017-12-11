@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
+		]
+	},
+	"iframepage": "Página <i>iframe</i>",
+	"iframepage-desc": "Permite incorporar uma página <i>iframe</i> numa página especial",
+	"iframepage-error-wgifsrc": "A variável <code>$wgIframePageSrc</code> deve ser definida em <code>LocalSettings.php</code>."
+}
