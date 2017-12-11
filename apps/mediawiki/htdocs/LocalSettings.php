@@ -185,5 +185,7 @@ $wgVirtualRestConfig['modules']['parsoid'] = array(
 
 require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
 
+require_once "$IP/extensions/Widgets/Widgets.php";
+
 //wfLoadExtension( 'MobileFrontend' );
 //$wgMFAutodetectMobileView = false;
