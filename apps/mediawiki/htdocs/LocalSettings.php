@@ -120,7 +120,7 @@ $wgUpgradeKey = "cbf56817e48b624f";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "athena";
+$wgDefaultSkin = "minerva";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -154,7 +154,7 @@ $wgPhpCli = "/opt/bitnami/php/bin/php";
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luastandalone';
 
-wfLoadSkin( 'Athena' );
+//wfLoadSkin( 'Athena' );
 wfLoadSkin( 'MinervaNeue' );
 
 wfLoadExtension( 'PDFEmbed' );
