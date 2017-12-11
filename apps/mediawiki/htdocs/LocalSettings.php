@@ -174,3 +174,5 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'AntiSpoof' );
 
 wfLoadExtension( 'AbuseFilter' );
+
+require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
