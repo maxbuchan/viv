@@ -178,6 +178,15 @@ wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'VisualEditor' );
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
 $wgHiddenPrefs[] = 'visualeditor-enable';
+$wgVirtualRestConfig['modules']['parsoid'] = array(
+	// URL to the Parsoid instance
+	// Use port 8142 if you use the Debian package
+	'url' => 'http://localhost:8142',
+	// Parsoid "domain", see below (optional)
+	'domain' => 'localhost',
+	// Parsoid "prefix", see below (optional)
+	'prefix' => 'localhost'
+);
 
 require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
 
