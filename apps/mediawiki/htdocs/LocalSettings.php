@@ -179,6 +179,3 @@ require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
 
 wfLoadExtension( 'MobileFrontend' );
 $wgMFAutodetectMobileView = true;
-wfLoadSkin( 'MinervaNeue' );
-
-$wgMFDefaultSkinClass = 'SkinMinerva'
