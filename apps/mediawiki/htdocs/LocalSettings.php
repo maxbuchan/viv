@@ -172,3 +172,5 @@ wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 wfLoadExtension( 'ParserFunctions' );
 
 wfLoadExtension( 'AntiSpoof' );
+
+wfLoadExtension( 'AbuseFilter' );
