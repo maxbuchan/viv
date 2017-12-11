@@ -30,7 +30,6 @@ $wgScriptExtension  = ".php";
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
-require_once "$IP/skins/Vector/Vector.php";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
@@ -180,3 +179,5 @@ require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
 
 wfLoadExtension( 'MobileFrontend' );
 $wgMFAutodetectMobileView = true;
+
+$wgMFDefaultSkinClass = 'SkinVector';
