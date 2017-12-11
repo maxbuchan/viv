@@ -175,6 +175,10 @@ wfLoadExtension( 'AntiSpoof' );
 
 wfLoadExtension( 'AbuseFilter' );
 
+wfLoadExtension( 'VisualEditor' );
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgHiddenPrefs[] = 'visualeditor-enable';
+
 require_once "$IP/extensions/FancyBoxThumbs/FancyBoxThumbs.php";
 
 //wfLoadExtension( 'MobileFrontend' );
