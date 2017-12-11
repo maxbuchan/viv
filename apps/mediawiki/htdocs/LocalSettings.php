@@ -154,7 +154,7 @@ require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luastandalone';
 
 wfLoadSkin( 'Athena' );
-wfLoadSkin( 'Vector' );
+wfLoadSkin( 'Timeless' );
 
 wfLoadExtension( 'PDFEmbed' );
 // Default width for the PDF object container.

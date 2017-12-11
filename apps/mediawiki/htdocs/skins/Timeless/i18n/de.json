@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"timeless-desc": "Eine zeitlose Benutzeroberfläche, entworfen nach dem Winter-Prototyp von Brandon Harris und verschiedenen Stilen der Wikimedia Foundation.",
+	"timeless-search-placeholder": "Ungefähr {{NUMBEROFPAGES}} Seiten durchsuchen",
+	"timeless-loggedin": "Dein Benutzerkonto",
+	"timeless-anonymous": "Anonym",
+	"timeless-loggedinas": "Angemeldet als '''$1'''",
+	"timeless-notloggedin": "Nicht angemeldet",
+	"timeless-userpage": "{{GENDER:$1|Benutzerseite}}",
+	"timeless-talkpage": "{{GENDER:$1|Benutzerdiskussion}}",
+	"timeless-pagelog": "Seitenlogbücher",
+	"timeless-more": "Mehr",
+	"timeless-sitetools": "Wikiwerkzeuge",
+	"timeless-pageactions": "Seitenwerkzeuge",
+	"timeless-userpagetools": "Benutzerseitenwerkzeuge",
+	"timeless-pagemisc": "Mehr",
+	"timeless-namespaces": "Namensräume",
+	"timeless-pagetools": "Seitenaktionen",
+	"timeless-languages": "Sprachen"
+}
