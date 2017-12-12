@@ -5102,13 +5102,13 @@ $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['*']['createpage'] = false;
 $wgGroupPermissions['*']['createtalk'] = false;
 $wgGroupPermissions['*']['writeapi'] = false;
-$wgGroupPermissions['*']['editmyusercss'] = true;
-$wgGroupPermissions['*']['editmyuserjs'] = true;
-$wgGroupPermissions['*']['viewmywatchlist'] = true;
-$wgGroupPermissions['*']['editmywatchlist'] = true;
-$wgGroupPermissions['*']['viewmyprivateinfo'] = true;
-$wgGroupPermissions['*']['editmyprivateinfo'] = true;
-$wgGroupPermissions['*']['editmyoptions'] = true;
+$wgGroupPermissions['*']['editmyusercss'] = false;
+$wgGroupPermissions['*']['editmyuserjs'] = false;
+$wgGroupPermissions['*']['viewmywatchlist'] = false;
+$wgGroupPermissions['*']['editmywatchlist'] = false;
+$wgGroupPermissions['*']['viewmyprivateinfo'] = false;
+$wgGroupPermissions['*']['editmyprivateinfo'] = false;
+$wgGroupPermissions['*']['editmyoptions'] = false;
 # $wgGroupPermissions['*']['patrolmarks'] = false; // let anons see what was patrolled
 
 // Implicit group for all logged-in accounts
@@ -5171,8 +5171,8 @@ $wgGroupPermissions['sysop']['createaccount'] = true;
 $wgGroupPermissions['sysop']['delete'] = true;
 // can be separately configured for pages with > $wgDeleteRevisionsLimit revs
 $wgGroupPermissions['sysop']['bigdelete'] = true;
-// can view deleted history entries, but not see or restore the text
-$wgGroupPermissions['sysop']['deletedhistory'] = true;
+// can view deleted entries, but not see or restore the text
+$wgGroupPermissions['sysop']['deletedhistory'] = false;
 // can view deleted revision text
 $wgGroupPermissions['sysop']['deletedtext'] = true;
 $wgGroupPermissions['sysop']['undelete'] = true;
@@ -5207,7 +5207,7 @@ $wgGroupPermissions['sysop']['unblockself'] = true;
 $wgGroupPermissions['sysop']['suppressredirect'] = true;
 # $wgGroupPermissions['sysop']['pagelang'] = true;
 # $wgGroupPermissions['sysop']['upload_by_url'] = true;
-$wgGroupPermissions['sysop']['mergehistory'] = true;
+$wgGroupPermissions['sysop']['mergehistory'] = false;
 $wgGroupPermissions['sysop']['managechangetags'] = true;
 $wgGroupPermissions['sysop']['deletechangetags'] = true;
 
